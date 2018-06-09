@@ -23,7 +23,44 @@
 	<main> 
 		<section class="filter">
 			<h2 class="visualy-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">	
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="pool" id="pool-filter" checked>
+							<label for="pool-filter">Бассейн</label>
+						</li>
+						<li>
+							<input type="checkbox" name="parking" id="parking-filter">
+							<label for="parking-filter">Парковка</label>
+						</li>
+						<li>
+							<input type="checkbox" name="WI-FI" id="WI-FI-filter">
+							<label for="WI-FI-filter">WI-FI</label>
+						</li>	
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="hotel" id="hotel-filter" checked>
+							<label for="hotel-filter">Гостиница</label>
+						</li>
+						<li>
+							<input type="checkbox" name="motel" id="motel-filter" checked>
+							<label for="motet-filter">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" name="Apartment" id="Apartment-filter" checked>
+							<label for="Apartment-filter">Апартаменты</label>
+						</li>	
+					</ul>
+				</fieldset>
+				<label>Стоимость в сутки(р):</label>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 		<section class="hostels">
 			<span>Найдено: 3</span>
@@ -65,9 +102,9 @@
 		<p>#VISITSEDONA</p>
 		<div class="social">
 			<ul>
-				<li><a class="social_btn" href="#">twitter</a></li>
-				<li><a class="social_btn" href="#">facebook</a></li>
-				<li><a class="social_btn" href="#">youtube</a></li>
+				<li><a class="social_btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
+				<li><a class="social_btn" href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+				<li><a class="social_btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
 			</ul>
 		</div>
 		<b>website by</b><a href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
