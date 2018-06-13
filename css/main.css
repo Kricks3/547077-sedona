@@ -1,0 +1,311 @@
+body {
+	margin: 0 auto ;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase; 
+    color: #333;
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px rgba(0,1,1,0.2);
+    width: 1200px;   
+}
+
+.inner-page {
+	
+	background-color: #fefefe;
+	background-image: url("../img/hotel_background.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+
+ }
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000;
+	background-color: #ffffff;
+}
+
+.left,
+.right {
+	list-style: none;
+}
+
+.left a,
+.right a {
+	color: #000;
+}
+
+.left a:hover,
+.left a:focus,
+.right a:hover,
+.right a:focus {
+	color: #81b3d2;
+}
+
+.left a:active,
+.right a:active {
+	color: #cacaca;
+}
+
+.main {
+	text-align: center;
+	background-color: #fff;
+}
+
+.intro {
+	line-height: 26px;
+}
+
+.intro h1{
+	font-size: 21px;
+}
+
+.city,
+.bridge {
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.city h3,
+.bridge h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+.main b {
+	font-weight: 400;
+}
+
+.last-reasons {
+	background-color: #eeeeee; 
+}
+
+
+.text-form .question  {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+.text-form {
+	line-height: 24px;
+}
+
+.button {
+	font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+
+}
+
+.find-hotels label{
+	color: #000;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.find-hotels-btn {
+	background-color: #766357;
+}
+
+.find-hotels-btn:hover {
+	background-color: #604e43;
+}
+
+.find-hotels-btn:active {
+	color: #827872;
+	background-color: #503e33;
+}
+
+.submit-btn {
+	background-color: #81b3d2;
+}
+
+.submit-btn:hover {
+	background-color: #669ec0;
+}
+
+.submit-btn:active {
+	color: #68a0c3;
+	background-color: #5496bd;
+}
+
+.find-hotels input {
+	font: inherit;
+	border: none;
+	background-color: #f2f2f2;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.find-hotels input:hover {
+	background-color: #ebebeb;
+}
+
+.find-hotels input:focus {
+	background-color: #ffffff;
+	border: solid 3px #eee;
+}
+
+
+
+.inner-page .current-page {
+	color: #978a83;
+}
+
+.filter {
+	color:#fff;
+}
+
+.filter legend {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter ul {
+	list-style: none;
+}
+
+.filter input:disabled + label {
+	color: #6a6a6a;
+}
+
+.hostels {
+	background: #fefefe
+}
+
+.filter-price {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.count-find {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.show-btn {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	border: 3px solid #fff;
+	border-radius: 5%;
+	background-color: transparent;
+}
+
+.show-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.hostels-sort,
+.hostels-by-price,
+.hostels-by-type,
+.hostels-by-rating,
+.sort-ascending,
+.sort-by-decreasing {
+	font-size: 12px;
+	line-height: 18px;
+}
+ 
+.hostels-by-price,
+.hostels-by-type,
+.hostels-by-rating {
+	color: #cacaca;
+	border-bottom: dotted 1px #81b3d2;
+}
+
+.hostels-by-price:hover,
+.hostels-by-type:hover,
+.hostels-by-rating:hover {
+	color: #a8c9df;
+	border-bottom: dotted 1px #81b3d2;
+}
+
+.hostels-by-price:active,
+.hostels-by-type:active,
+.hostels-by-rating:active {
+	border: none;
+	color: #000;
+}
+
+.filter-active {
+	color: #a8c9df;
+	border: none;
+}
+
+.hostels ul {
+	list-style: none;
+}
+
+.hotel-name {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000;
+}
+
+.hotel-name:hover {
+	color: #81b3d2;
+}
+
+.hotel-name:active {
+	color: #cacaca;
+}
+
+.inner-button {
+	font-weight: 700;
+	color: #fff;
+
+}
+
+
+.main-footer {
+	background-color: rgba(252,252,251,0.9);
+}
+
+.main-footer p {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.main-footer b {
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.main-footer a:hover {
+	color: #cacaca;
+}
+
+.social ul{
+	list-style: none;
+}
+
+.social a {
+	background-color: #81b3d2;
+}
+
+.social a:hover {
+	background-color: #669ec0;
+}
+
+.social a:active {
+	background-color: #5496bd;
+}
+

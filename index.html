@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 	<header class="head">
 		<nav class="navigation">
 				<ul class="left">
@@ -33,7 +32,7 @@
 				<b>- №1 -</b> 
 				<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
 		</section>
-		<section>
+		<section class="advantages">
 			<div>	
 				<h3>ЖИЛЬЁ</h3>
 				<p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -52,7 +51,7 @@
 				 <b>- №2 -</b> 
 				 <p>да, по нему можно пройти! если конечно вы осмелились</p>
 		</section>
-		<section>
+		<section class="last-reasons">
 			<div>	
 				<h3>небольшая площадь</h3>
 				<b>- №3 -</b>
@@ -69,9 +68,9 @@
 				<p>большинство едет в грнд каньон и толпится там</p>
 			</div>
 		</section>
-			<h2>Заинтересовались?</h2>
-			<p> <b>Заинтересовались?</b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<button>поиск гостиницы в Седоне</button>
+			<p class="text-form"> <b class="question">Заинтересовались?</b> <br>
+			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<button class="button find-hotels-btn">поиск гостиницы в Седоне</button>
 			<form class="find-hotels" method="get" action="https://echo.htmlacademy.ru">
 				<p class="date-in">
 					<label for="date-in">дата заезда:</label>
@@ -83,16 +82,16 @@
 				</p>
 				<p class="count">
 					<label for="adults">Взрослые:</label>
-					<button type="button">Меньше</button>
+					<button class="button" type="button">Меньше</button>
 					<input type="text" name="adults" id="adults" value="2">
-					<button type="button">Больше</button>
+					<button class="button" type="button">Больше</button>
 					<label for="childs">Дети:</label>
-					<button type="button">Меньше</button>
+					<button class="button" type="button">Меньше</button>
 					<input type="text" name="childs" id="childs" value="0">
-					<button type="button">Больше</button>
+					<button class="button" type="button">Больше</button>
 				</p>
 				<p class="find">
-					<button type="submit">Найти</button>
+					<button class="button submit-btn" type="submit">Найти</button>
 				</p>
 			</form>
 	</main>
@@ -100,9 +99,9 @@
 		<p>#VISITSEDONA</p>
 		<div class="social">
 			<ul>
-				<li><a class="social_btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
-				<li><a class="social_btn" href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
-				<li><a class="social_btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+				<li><a class="social-btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
+				<li><a class="social-btn" href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+				<li><a class="social-btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
 			</ul>
 		</div>
 		<b>website by</b><a href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
