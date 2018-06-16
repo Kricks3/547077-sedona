@@ -10,30 +10,34 @@
   <body>
 	<header class="head">
 		<nav class="navigation">
+			<div class="navigation-wrapper">
 				<ul class="left">
-					<li><a href="#">информация</a></li>
-					<li><a href="#">фото и видео</a></li>
+					<li><a href="#">ИНФОРМАЦИЯ</a></li>
+					<li><a href="#">ФОТО И ВИДЕО</a></li>
 				</ul>
+				<span class="logo-place"></span>
+				<ul class="right">
+					<li><a class="current-page" href="#">ГОСТИНИЦЫ</a></li>
+					<li><a href="#">КАРТА ШТАТА</a></li>
+				</ul>
+			</div>
 			<a class="logo-header" href="#">
 				<img src="img/logo.png" alt="Логотип Седоны">
 			</a>
-				<ul class="right">
-					<li><a href="#">гостиницы</a></li>
-					<li><a href="#">карта штата</a></li>
-				</ul>
 		</nav>
 	</header>
 	<main class="main">
 		<section class="intro">
-			<h1>седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+			<h1>седона - небольшой городок в аризоне,<br>заслуживающий большего!</h1>
 			<b>рассмотри 5 причин, по которым седона круче, чем гранд каньон!</b>
 		</section>
-		<section>
+		<div class="city-container">
 			<section class="city">
-				<h3>настоящий городок</h3> 
-				<b>- №1 -</b> 
-				<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
-		</section>
+					<h3>настоящий <br> городок</h3> 
+					<b>- №1 -</b> 
+					<p>седона — не аттракцион для туристов, там течет своя жизнь</p>
+			</section>
+		</div>
 		<section class="advantages">
 			<div>	
 				<h3>ЖИЛЬЁ</h3>
@@ -48,11 +52,13 @@
 				<p>не только китайского, но и местного производства!</p>
 			</div>
 		</section>
-		<section class="bridge">
-				<h3>там есть мост дьявола</h3>
-				 <b>- №2 -</b> 
-				 <p>да, по нему можно пройти! если конечно вы осмелились</p>
-		</section>
+		<div class="bridge-container">	
+			<section class="bridge">
+					<h3>там есть <br>мост дьявола</h3>
+					<b>- №2 -</b> 
+					<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+			</section>
+		</div>
 		<section class="last-reasons">
 			<div>	
 				<h3>небольшая площадь</h3>
@@ -70,35 +76,41 @@
 				<p>большинство едет в грнд каньон и толпится там</p>
 			</div>
 		</section>
+		<div class="text-field">
 			<p class="text-form"> <b class="question">Заинтересовались?</b> <br>
 			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<button class="button find-hotels-btn">поиск гостиницы в Седоне</button>
-			<form class="find-hotels" method="get" action="https://echo.htmlacademy.ru">
-				<p class="date-in">
-					<label for="date-in">дата заезда:</label>
-					<input type="text" name="date-in" id="date-in" value="24.04.2017">
-				</p>
-				<p class="date-out">
-					<label for="date-out">дата выезда:</label>
-					<input type="text" name="date-out" id="date-out" value="04.07.2017">
-				</p>
-				<p class="count">
-					<label for="adults">Взрослые:</label>
-					<button class="button" type="button">Меньше</button>
-					<input type="text" name="adults" id="adults" value="2">
-					<button class="button" type="button">Больше</button>
-					<label for="childs">Дети:</label>
-					<button class="button" type="button">Меньше</button>
-					<input type="text" name="childs" id="childs" value="0">
-					<button class="button" type="button">Больше</button>
-				</p>
-				<p class="find">
-					<button class="button submit-btn" type="submit">Найти</button>
-				</p>
-			</form>
+			<div class="hotel-form">
+				<button class="button find-hotels-btn">поиск гостиницы в Седоне</button>
+				<form class="find-hotels" method="get" action="https://echo.htmlacademy.ru">
+					<p class="date-in">
+						<label for="date-in">дата заезда:</label>
+						<input type="text" name="date-in" id="date-in" value="24.04.2017">
+					</p>
+					<p class="date-out">
+						<label for="date-out">дата выезда:</label>
+						<input type="text" name="date-out" id="date-out" value="04.07.2017">
+					</p>
+					<p class="count">
+						<label for="adults">Взрослые:</label>
+						<button class="button" type="button">Меньше</button>
+						<input type="text" name="adults" id="adults" value="2">
+						<button class="button" type="button">Больше</button>
+						<label for="childs">Дети:</label>
+						<button class="button" type="button">Меньше</button>
+						<input type="text" name="childs" id="childs" value="0">
+						<button class="button" type="button">Больше</button>
+					</p>
+					<p class="find">
+						<button class="button submit-btn" type="submit">Найти</button>
+					</p>
+				</form>
+			</div>
+		</div>
 	</main>
 	<footer class="main-footer">
-		<p>#VISITSEDONA</p>
+		<div class="visitsedona">
+			<p>#VISITSEDONA</p>
+		</div>
 		<div class="social">
 			<ul>
 				<li><a class="social-btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
@@ -106,7 +118,9 @@
 				<li><a class="social-btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
 			</ul>
 		</div>
-		<b>website by</b><a href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
+		<div class="authors">
+			<b>website by</b><a class="htmlacademy-logo" href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY" width="116px" height="40px"></a>
+		</div>
 	</footer>
   </body>
 </html>

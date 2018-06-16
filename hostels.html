@@ -10,23 +10,26 @@
 <body class="inner-page">
 	<header class="head">
 		<nav class="navigation">
+			<div class="navigation-wrapper">
 				<ul class="left">
 					<li><a href="#">ИНФОРМАЦИЯ</a></li>
 					<li><a href="#">ФОТО И ВИДЕО</a></li>
 				</ul>
-			<a class="logo-header" href="#">
-				<img src="img/logo.png" alt="Логотип Седоны">
-			</a>
+				<span class="logo-place"></span>
 				<ul class="right">
 					<li><a class="current-page" href="#">ГОСТИНИЦЫ</a></li>
 					<li><a href="#">КАРТА ШТАТА</a></li>
 				</ul>
+			</div>
+			<a class="logo-header" href="#">
+				<img src="img/logo.png" alt="Логотип Седоны" width="138px" height="70px">
+			</a>	
 		</nav>
 	</header>
 	<main> 
 		<section class="filter">
 			<h2 class="visualy-hidden">Фильтр товаров</h2>
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru">	
+			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">	
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 					<ul>
@@ -61,56 +64,83 @@
 						</li>	
 					</ul>
 				</fieldset>
-				<label class="filter-price">Стоимость в сутки(р):</label>
-				<button class="button show-btn" type="submit">Показать</button>
+				<div class="price-container">
+					<label class="filter-price">Стоимость в сутки(р):</label>
+					<button class="button show-btn" type="submit">Показать</button>
+				</div>
 			</form>
 		</section>
 		<section class="hostels">
-			<span class="count-find">Найдено: 3</span>
-			<span class="hostels-sort">сортирока: </span>
-			<a href="#" class="hostels-by-price filter-active">по цене</a>
-			<a href="#" class="hostels-by-type">по типу</a>
-			<a href="#" class="hostels-by-rating">по рейтингу</a>
-			<a href="#" class="sort-ascending">по возрастанию</a>
-			<a href="#" class="sort-by-decreasing">по убыванию</a>
+			<div class="filter-title">
+				<span class="count-find">Найдено: 3</span>
+				<span class="hostels-sort">сортирока: </span>
+				<a href="#" class="hostels-by-price filter-active">по цене</a>
+				<a href="#" class="hostels-by-type">по типу</a>
+				<a href="#" class="hostels-by-rating">по рейтингу</a>
+				<a href="#" class="sort-ascending">по возрастанию</a>
+				<a href="#" class="sort-by-decreasing">по убыванию</a>
+			</div>
 			<ul class="hostels-list">
 				<li class="hostels-item">
-					<img src="img/hotel_1.jpg" alt="amara resort">
-					<h3><a class="hotel-name" href="#">amara resort & spa</a></h3>
-					<span>гостиница	</span>
-					<span>от 4000 р.</span>
-					<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
-					<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+						<img src="img/hotel_1.jpg" alt="amara resort">
+						<div class="item-container">
+							<h3><a class="hotel-name" href="#">amara resort & spa</a></h3>
+							<div class="hotel-type-container">
+								<span>гостиница	</span>
+								<span>от 4000 р.</span>
+							</div>
+							<div class="button-container">
+								<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
+								<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+							</div>
+						</div>
+					
 				</li>
 				<li class="hostels-item">
 					<img src="img/hotel_2.jpg" alt="desert qualin">
-					<h3><a class="hotel-name" href="#">desert qualin inn</a></h3>
-					<span>мотель	</span>
-					<span>от 3000 р.</span>
-					<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
-					<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+					<div class="item-container">
+						<h3><a class="hotel-name" href="#">desert qualin inn</a></h3>
+						<div class="hotel-type-container">
+							<span>мотель	</span>
+							<span>от 3000 р.</span>
+						</div>
+						<div class="button-container">
+							<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
+							<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+						</div>
+					</div>
 				</li>
 				<li class="hostels-item">
 					<img src="img/hotel_3.jpg" alt="villas at poco diablo">
-					<h3><a class="hotel-name" href="#">villas at poco diablo</a></h3>
-					<span>Апартаменты	</span>
-					<span>от 2000 р.</span>
-					<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
-					<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+					<div class="item-container">
+						<h3><a class="hotel-name" href="#">villas at poco diablo</a></h3>
+						<div class="hotel-type-container">
+							<span>Апартаменты	</span>
+							<span>от 2000 р.</span>
+						</div>
+						<div class="button-container">
+							<a href="#" class="inner-button info-btn submit-btn">подробнее</a>
+							<a href="#" class="inner-button booking-btn find-hotels-btn">забронировать</a>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</section>
 	</main>
 	<footer class="main-footer">
-		<p>#VISITSEDONA</p>
+		<div class="visitsedona">
+			<p>#VISITSEDONA</p>
+		</div>
 		<div class="social">
 			<ul>
-				<li><a class="social_btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
-				<li><a class="social_btn" href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
-				<li><a class="social_btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+				<li><a class="social-btn" href="#"> <img src="img/twitter.svg" alt="twitter"> </a></li>
+				<li><a class="social-btn" href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+				<li><a class="social-btn" href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
 			</ul>
 		</div>
-		<b>website by</b><a href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
+		<div class="authors">
+			<b>website by</b><a class="htmlacademy-logo" href="#"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY" width="116px" height="40px"></a>
+		</div>
 	</footer>	
 </body>
 </html>
