@@ -9,6 +9,7 @@ body {
     background-color: #f2f2f2;
     box-shadow: 0 5px 15px rgba(0,1,1,0.2);
     max-width: 1200px;   
+    position: relative;
 }
 
 html {
@@ -660,7 +661,7 @@ input[type="radio"].visually-hidden {
 	background: url("../img/checkbox-on.svg");
 	z-index: 1;
     position: absolute;
-    width: 25px;
+    width: 27px;
     height: 23px;
     left: -40px;
     top: 0;
@@ -920,4 +921,180 @@ input[type="radio"].visually-hidden {
 	padding: 5px 16px;
 	color: #939393;
 	background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/* ----- Форма ----- */
+
+.map {
+	height: 595px;
+	background-color: red;
+	background: url("../img/map.jpg") no-repeat center center;
+}
+
+.hotel-form {
+	position: relative;
+}
+
+.find-hotels {
+	width: 100%;
+	position: absolute;
+	background-color: #fff;
+	padding: 55px 56px;
+}
+
+.find-hotels p {
+	margin: 0;
+	margin-bottom: 30px; 
+}
+
+.date-in,
+.date-out {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	align-items: center;
+}
+
+.find-hotels input {
+	padding-left: 13px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 0;
+	width: 345px;
+}
+
+.find-hotels label {
+	width: 113px;
+	cursor: pointer;
+}
+
+
+.find-hotels .count,
+.find-hotels .find {
+	margin: 0;
+}
+
+.count {
+	display: flex;
+	width: 100%;
+}
+
+.count-child,
+.count-adults {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+}
+
+.count-child {
+	text-align: center;
+}
+
+.count-wrapper {
+	display: flex;
+}
+
+
+
+.count-wrapper button {
+	position: relative;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.count-wrapper .less-btn::before {
+	content: "";
+	width: 11px;
+	height: 3px;
+	position: absolute;
+	left: 13px;
+	background-color: #a9a9a9;
+}
+
+.count-wrapper .more-btn::before,
+.count-wrapper .more-btn::after {
+	content: "";
+	width: 11px;
+	height: 3px;
+	position: absolute;
+	left: 13px;
+	background-color: #a9a9a9;
+
+}
+
+.count-wrapper .more-btn::before {
+	transform: rotate(90deg);
+}
+
+
+.count-wrapper .less-btn:hover::before,
+.count-wrapper .less-btn:focus::before,
+.count-wrapper .more-btn:hover::before,
+.count-wrapper .more-btn:hover::after,
+.count-wrapper .more-btn:focus::before,
+.count-wrapper .more-btn:focus::after {
+	background-color: #000;
+}
+
+.count-wrapper .less-btn:active::before,
+.count-wrapper .more-btn:active::before,
+.count-wrapper .more-btn:active::after {
+	background-color: #81b3d2;
+}
+
+.count-wrapper input {
+	width: 40px;
+	height: 38px;
+}
+
+
+.find-btn {
+	width: 460px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: #81b3d2;
+	margin-top: 55px;
+}
+
+.find-btn:hover,
+.find-btn:focus {
+	background-color: #669ec0;
+}
+
+.find-btn:active {
+	background-color: #5496bd;
+	color: #85b0cd;
+}
+
+.main-page-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+
+}
+
+
+/* ----- Тест календариков ----- */
+
+.calendar {
+	position: absolute;
+	right: 66px;
+
+}
+
+.calendar path {
+	fill: #a9a9a9;
+}
+
+.date-in input:hover + .calendar + path {
+	fill: #000;
 }
