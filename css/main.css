@@ -25,9 +25,10 @@ html {
 .inner-page {
 	
 	background-color: #fefefe;
-	background-image: url("../img/hotel_background.jpg");
+	/* background-image: url("../img/hotel_background.jpg");
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: top -240px center; */
+	/*background-size: cover;*/
 
  }
 
@@ -103,11 +104,11 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
-	margin-top: 56px;
+	margin-top: 49px;
 }
 .text-form {
 	line-height: 24px;
-	margin-bottom: 53px;
+	margin-bottom: 45px;
 }
 
 .button {
@@ -128,8 +129,9 @@ a {
 }
 
 .find-hotels-btn {
+	font-size: 21px;
 	background-color: #766357;
-	width: 567px;
+	width: 569px;
 	height: 85px;
 	padding: 0;
 }
@@ -291,8 +293,8 @@ a {
 .inner-button {
 	font-weight: 700;
 	color: #fff;
-	padding: 5px 15px;
-	margin-right: 5px;
+	padding: 5px 17px;
+	margin-right: 3px;
 }
 
 
@@ -328,9 +330,6 @@ a {
 	background-color: #5496bd;
 }
 
-.htmlacademy-logo:hover img{
-	color: #fff;
-}
 
 
 .visualy-hidden {
@@ -368,9 +367,9 @@ body {
 .right {
 	padding: 0;
 	margin: 0;
-	min-height: 55px;
+	min-height: 56px;
 	display: flex;
-	width: 40%;
+	width: 46%;
 	align-items: center;
 	text-align: left;
 }
@@ -382,6 +381,7 @@ body {
 
 .city-container p,
 .bridge-container p {
+	margin-top: 22px;
 	margin-bottom: 0;
 }
 /*----- конец -----*/
@@ -391,7 +391,7 @@ body {
 
 .logo-header {
 	position: absolute;
-	left: 45%;
+	left: 44%;
 	top: 1px;
 }
 
@@ -413,7 +413,7 @@ body {
 
 .intro h1 {
 	margin-top: 60px;
-	margin-bottom: 35px;
+	margin-bottom: 27px;
 }
 
 .city-container {
@@ -423,16 +423,17 @@ body {
 
 .city {
 	flex-basis: 33%;
-	padding: 35px 55px 55px;
+	padding: 28px 55px 59px;
 }
 
 .city-container::after {
 	content: "";
 	width: 100%;
 	flex-basis: 67%;
-	background-image: url("../img/city.jpg");
+	background-image: url("../img/city1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
 }
 
 .advantages {
@@ -442,7 +443,9 @@ body {
 .advantages div {
 	flex-basis: 33%;
 	padding-top: 135px;
-	padding-bottom: 85px;
+	padding-bottom: 70px;
+	padding-left: 4%;
+	padding-right: 4%;
 	position: relative;
 }
 
@@ -451,11 +454,11 @@ body {
 }
 
 .advantages div:nth-of-type(2)::before {
-	background-image: url("../img/icon-2.svg");
+	background-image: url("../img/icon-3.svg");
 }
 
 .advantages div:nth-of-type(3)::before {
-	background-image: url("../img/icon-3.svg");
+	background-image: url("../img/icon-2.svg");
 }
 
 .advantages div::before {
@@ -483,25 +486,27 @@ body {
 
 .bridge {
 	flex-basis: 33%;
-	padding: 35px 55px 55px;
+	padding: 25px 3.8% 60px;
 }
 
 .bridge-container::before {
 	content: "";
 	width: 100%;
 	flex-basis: 67%;
-	background-image: url("../img/bridge.jpg");
+	background-image: url("../img/bridge1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
 }
 
 .last-reasons {
 	display: flex;
 	justify-content: space-between;
 }
-
+/* изменить */
 .last-reasons div {
-	padding: 48px 95px 63px 95px;
+	padding: 48px 3.8% 65px;
+	padding-right: 
 }
 
 .last-reasons h3 {
@@ -524,7 +529,7 @@ body {
 }
 
 .text-form {
-	margin-top: 35px;
+	margin-top: 25px;
 	width: 440px;
 
 }
@@ -556,6 +561,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	align-items: center;
 	min-height: 120px;
+	justify-content: space-between;
 }
 
 
@@ -585,21 +591,42 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
-.authors  b{
-	vertical-align: top;
-	margin-right: 10px;
+
+.authors {
+	height: 120px;
+	vertical-align: middle;
+	padding-top: 40px;
+	text-align: center;
 }
 
-.social-btn:active path {
+.authors  b{
+	display: inline-block;
+	height: 40px;
+	vertical-align: top ;
+	margin-right: 7px;
+	padding-top: 3px
+}
+
+
+.social-icons {
+	fill: #fff;
+}
+
+.social-btn:active .social-icons {
 	fill: #88b6d1;
 }
 
-.authors a:hover path,
-.authors a:focus path {
+.htmlacademy-logo {
+	display: inline-block;
+	height: 40px;
+}
+
+.htmlacademy-logo:hover .icon-html,
+.htmlacademy-logo:focus .icon-html {
 	fill: #81b3d2;
 }
 
-.authors a:active path {
+.htmlacademy-logo:active .icon-html {
 	fill: #bdbbbc;
 }
 
@@ -610,19 +637,23 @@ input[type="radio"].visually-hidden {
 	padding: 0 6%;
 	display: flex;
 	width: 100%;
+	background-image: url("../img/hotel_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 
 } 
 
 .filter-form {
 	display: flex;
-	margin-top: 30px;
+	margin-top: 28px;
 	width: 100%;
 }
 
 .filter-form fieldset {
 	margin: 0;
 	padding: 0;
-	margin-right: 8%;
+	margin-right: 11%;
 }
 
 
@@ -634,7 +665,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
 	margin-top: 25px;
-	padding-left: 40px;
+	padding-left: 42px;
 }
 
 .filter-option label {
@@ -669,7 +700,7 @@ input[type="radio"].visually-hidden {
 
 
 .filter-range {
- 	width: 330px;
+ 	width: 316px;
   	color: #ffffff;
  	text-transform: uppercase;
  	margin: 0 auto;
@@ -686,8 +717,8 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
 	position: relative;
- 	height: 40px;
- 	margin-bottom: 20px;
+ 	height: 35px;
+ 	margin-bottom: 21px;
  	font-size: 0;
  	border: 2px solid #ffffff;
  	border-radius: 2px;
@@ -713,18 +744,17 @@ input[type="radio"].visually-hidden {
  	font-size: 14px;
  	line-height: 38px;
  	vertical-align: top;
-
 	cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
- 	width: 155px;
- 	padding-left: 65px;
+ 	width: 47%;
+ 	padding-left: 20%;
 }
 
 .price-controls input {
- 	width: 50px;
+ 	width: 45px;
  	margin: 0;
 
  	color: inherit;
@@ -735,70 +765,65 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls {
-  position: relative;
+	position: relative;
 
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
+	height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
+    width: 80%;
+    height: 2px;
 
-  background: #ffffff;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    position: absolute;
+    top: -11px;
+    width: 23px;
+    height: 27px;
+    background: url(../img/filter-button.svg) no-repeat center center;
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background-size: 103%;
 }
 
 .range-toggle-min {
-  left: 0;
+ 	left: -5px;
 }
 
 .range-toggle-max {
-  left: 80%;
+  	left: 79%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  	display: block;
+  	margin: 0 auto;
+  	margin-right: 30%;
+  	padding: 5px 33px; 
+  	font-size: 14px;
+  	line-height: 20px;
+  	color: #ffffff;
+  	text-transform: uppercase;
 
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+  	background: transparent;
+  	border: 2px solid #ffffff;
+  	border-radius: 2px;
+  	cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
+  	color: #000000;
 
-  background: #ffffff;
+  	background: #ffffff;
 }
 
 
@@ -831,7 +856,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-title a {	
-	margin-left: 30px;
+	margin-left: 33px;
+}
+
+.hostels-by-price {
+	margin-left: 44px;
 }
 
 .count-find {
@@ -861,6 +890,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hostels-list {
+	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0; 
 }
 
@@ -871,7 +902,8 @@ input[type="radio"].visually-hidden {
 .hostels-item {
 	display: flex;
 	height: 150px;
-	padding-top: 32px;
+	padding-top: 30px;
+	padding-right: 6%;
 	padding-left: 6%; 
 	padding-bottom: 30px;
 	border-bottom: 1px solid #e5e5e5;
@@ -887,7 +919,7 @@ input[type="radio"].visually-hidden {
 
 .item-container h3 {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	margin-top: -5px;
 }
 
@@ -898,16 +930,16 @@ input[type="radio"].visually-hidden {
 
 
 .hotel-type-container span:first-child {
-	min-width: 114px;
+	min-width: 115px;
 }
 
 .rating-container {
 	margin: 0 auto;
-	margin-right: 6%;
+	margin-right: 0;
 }
 
 .rating-container p {
-	margin-bottom: 47px;
+	margin-bottom: 45px;
 	margin-top: -3px;
 	text-align: right;
 }
@@ -918,7 +950,7 @@ input[type="radio"].visually-hidden {
 }
 
 .rating-container span {
-	padding: 5px 16px;
+	padding: 4px 15px;
 	color: #939393;
 	background-color: #f2f2f2;
 }
@@ -934,7 +966,8 @@ input[type="radio"].visually-hidden {
 .map {
 	height: 595px;
 	background-color: red;
-	background: url("../img/map.jpg") no-repeat center center;
+	background: url("../img/map.jpg") no-repeat;
+	background-position: top -150px center;
 }
 
 .hotel-form {
@@ -950,7 +983,7 @@ input[type="radio"].visually-hidden {
 
 .find-hotels p {
 	margin: 0;
-	margin-bottom: 30px; 
+	margin-bottom: 29px; 
 }
 
 .date-in,
@@ -963,8 +996,8 @@ input[type="radio"].visually-hidden {
 
 .find-hotels input {
 	padding-left: 13px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 6px;
+	padding-bottom: 8px;
 	margin-right: 0;
 	width: 345px;
 }
@@ -1002,7 +1035,13 @@ input[type="radio"].visually-hidden {
 	display: flex;
 }
 
+.count-child label {
+	padding-left: 30px;
+}
 
+.count-adults .count-wrapper {
+	padding-right: 2px;
+}
 
 .count-wrapper button {
 	position: relative;
@@ -1051,13 +1090,17 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
+
+
 .count-wrapper input {
-	width: 40px;
+	width: 38px;
 	height: 38px;
+	padding-left: 15px;
 }
 
 
 .find-btn {
+	font-size: 21px;
 	width: 460px;
 	padding-top: 16px;
 	padding-bottom: 16px;
@@ -1085,16 +1128,23 @@ input[type="radio"].visually-hidden {
 
 /* ----- Тест календариков ----- */
 
+
+
 .calendar {
-	position: absolute;
-	right: 66px;
-
-}
-
-.calendar path {
 	fill: #a9a9a9;
+	position: absolute;
+	right: 65px;
 }
 
-.date-in input:hover + .calendar + path {
+
+input[class="input-date-in"]:hover + .calendar,
+input[class="input-date-in"]:focus + .calendar,
+input[class="input-date-out"]:hover + .calendar,
+input[class="input-date-out"]:focus + .calendar {
 	fill: #000;
+}
+
+input[class="input-date-in"]:active + .calendar,
+input[class="input-date-out"]:active + .calendar {
+	fill: #86b6d4;
 }
