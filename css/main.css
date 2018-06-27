@@ -10,6 +10,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,1,1,0.2);
     max-width: 1200px;   
     position: relative;
+    letter-spacing: 0.007em;
 }
 
 html {
@@ -107,8 +108,12 @@ a {
 	margin-top: 49px;
 }
 .text-form {
+	text-align: center;
 	line-height: 24px;
-	margin-bottom: 45px;
+	margin-bottom: 47px;
+	margin-top: 23px;
+	width: 440px;
+
 }
 
 .button {
@@ -297,6 +302,10 @@ a {
 	margin-right: 3px;
 }
 
+.booking-btn {
+	background-color: #766357;
+}
+
 
 .main-footer {
 	background-color: rgba(252,252,251,0.7);
@@ -391,7 +400,7 @@ body {
 
 .logo-header {
 	position: absolute;
-	left: 44%;
+	left: 44.3%;
 	top: 1px;
 }
 
@@ -444,7 +453,7 @@ body {
 	flex-basis: 33%;
 	padding-top: 135px;
 	padding-bottom: 70px;
-	padding-left: 4%;
+	padding-left: 4.2%;
 	padding-right: 4%;
 	position: relative;
 }
@@ -486,7 +495,7 @@ body {
 
 .bridge {
 	flex-basis: 33%;
-	padding: 25px 3.8% 60px;
+	padding: 25px 3.7% 60px;
 }
 
 .bridge-container::before {
@@ -501,12 +510,23 @@ body {
 
 .last-reasons {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 /* изменить */
 .last-reasons div {
-	padding: 48px 3.8% 65px;
-	padding-right: 
+	flex-basis: 33%;
+}
+
+.last-reasons div:nth-of-type(1) {
+	padding: 48px 7.4% 60px;
+}
+
+.last-reasons div:nth-of-type(2) {
+	padding: 48px 5.4% 60px;
+}
+
+.last-reasons div:nth-of-type(3) {
+	padding: 48px 5.9% 60px;
 }
 
 .last-reasons h3 {
@@ -514,13 +534,13 @@ body {
 	margin-bottom: 26px;
 }
 
-.last-reasons b {
-	margin-bottom: 26px;
-}
 
 .last-reasons p {
 	margin-bottom: 0;
+	margin-top: 20px;
 }
+
+
 
 .text-field {
 	display: flex;
@@ -528,11 +548,6 @@ body {
 	align-items: center;
 }
 
-.text-form {
-	margin-top: 25px;
-	width: 440px;
-
-}
 
 .hotel-form {
 	width: 568px;
@@ -978,7 +993,8 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	position: absolute;
 	background-color: #fff;
-	padding: 55px 56px;
+	padding: 56px 55px;
+	padding-top: ;
 }
 
 .find-hotels p {
@@ -994,17 +1010,24 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 }
 
+.date-in label,
+.date-out label {
+	padding-left: 3px;
+}
+
 .find-hotels input {
 	padding-left: 13px;
-	padding-top: 6px;
-	padding-bottom: 8px;
+	/*padding-top: 13px;*/
+	text-transform: uppercase;
 	margin-right: 0;
 	width: 345px;
+	height: 38px;
 }
 
 .find-hotels label {
 	width: 113px;
 	cursor: pointer;
+	letter-spacing: 0.007em;
 }
 
 
@@ -1133,7 +1156,7 @@ input[type="radio"].visually-hidden {
 .calendar {
 	fill: #a9a9a9;
 	position: absolute;
-	right: 65px;
+	right: 64px;
 }
 
 
