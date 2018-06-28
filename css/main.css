@@ -180,6 +180,7 @@ a {
 .find-hotels input:focus {
 	background-color: #ffffff;
 	border: solid 3px #eee;
+	outline: none;
 }
 
 
@@ -233,7 +234,7 @@ a {
 	border: 3px solid #fff;
 	border-radius: 5%;
 	background-color: transparent;
-	width: 132px;
+	width: 137px;
 	min-height: 32px;
 }
 
@@ -537,7 +538,7 @@ body {
 }
 /* изменить */
 .last-reasons div {
-	flex-basis: 33%;
+	flex-basis: 33.3%;
 }
 
 .last-reasons div:nth-of-type(1) {
@@ -849,7 +850,8 @@ input[type="radio"].visually-hidden {
   	display: block;
   	margin: 0 auto;
   	margin-right: 30%;
-  	padding: 5px 33px; 
+  	padding: 6px 33px;
+  	padding-right: 38px; 
   	font-size: 14px;
   	line-height: 20px;
   	color: #ffffff;
@@ -1200,4 +1202,11 @@ input[class="input-date-out"]:focus + .calendar {
 input[class="input-date-in"]:active + .calendar,
 input[class="input-date-out"]:active + .calendar {
 	fill: #86b6d4;
+}
+
+
+/* ----- Тест спрятанной формы ----- */
+
+.form-hidden {
+	display: none;
 }
