@@ -544,6 +544,11 @@ input[class="input-date-out"]:active + .calendar {
 	background-position: top -150px center;
 }
 
+.map iframe {
+	width: 100%;
+	frameborder: 0;
+}
+
 /* ----- Hotels -----*/
 
 .inner-page .current-page {
