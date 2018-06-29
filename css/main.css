@@ -442,7 +442,7 @@ a {
 
 .find-hotels input:focus {
 	background-color: #ffffff;
-	border: solid 3px #eee;
+	box-shadow: inset 0 0 0 3px #eee;
 	outline: none;
 }
 
