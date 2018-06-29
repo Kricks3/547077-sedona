@@ -144,6 +144,7 @@ a {
 	content: "";
 	width: 100%;
 	height: 510px;
+	background-color: #ddebf4;
 	background-image: url("../img/nice-text-main.png"), url("../img/shape-header.png"), url("../img/background.jpg");
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position:center center, bottom 0px center, top -80px center;
@@ -158,12 +159,14 @@ a {
 .city-container {
 	display: flex;
 	width: 100%;
+
 }
 
 .city-container::after {
 	content: "";
 	width: 100%;
 	flex-basis: 67%;
+	background-color: #8a4043;
 	background-image: url("../img/city1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -348,16 +351,62 @@ a {
 	background-color: #503e33;
 }
 
+@keyframes show{
+	0% {
+		opacity: 0.2;
+	}
+
+	70% {
+		opacity: 0.5;
+	}
+
+	90% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .find-hotels {
 	width: 100%;
 	position: absolute;
 	background-color: #fff;
 	padding: 56px 55px;
 	padding-top: ;
+	animation: show 0.5s;
 }
 
 .form-hidden {
 	display: none;
+
+}
+
+.form-error {
+	animation: shake 0.6s;
 }
 
 .find-hotels label{
@@ -539,7 +588,7 @@ input[class="input-date-out"]:active + .calendar {
 
 .map {
 	height: 595px;
-	background-color: red;
+	background-color: green;
 	background: url("../img/map.jpg") no-repeat;
 	background-position: top -150px center;
 }
@@ -560,6 +609,7 @@ input[class="input-date-out"]:active + .calendar {
 	padding: 0 6%;
 	display: flex;
 	width: 100%;
+	background-color: #7b9bbe;
 	background-image: url("../img/hotel_background.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -607,19 +657,27 @@ input[class="input-date-out"]:active + .calendar {
     content: "";
     position: absolute;
     background: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
     left: -40px;
     top: 0;
-    width: 23px;
-    height: 23px; 
+    width: 25px;
+    height: 25px; 
+   
+    
+}
+
+.filter-input-checkbox:focus + label::before { 
+	box-shadow: 0 0 0 2px #0e5f91;
 }
 
 .filter-input-checkbox:checked + label::before {
     content: "";
 	background: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
 	z-index: 1;
     position: absolute;
     width: 27px;
-    height: 23px;
+    height: 25px;
     left: -40px;
     top: 0;
 }
@@ -1050,6 +1108,7 @@ input[class="input-date-out"]:active + .calendar {
 
 .htmlacademy-logo {
 	display: inline-block;
+	vertical-align: middle;
 	height: 40px;
 }
 
