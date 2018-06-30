@@ -142,6 +142,7 @@ a {
 
 .intro::before {
 	content: "";
+	display: block;
 	width: 100%;
 	height: 510px;
 	background-color: #ddebf4;
@@ -164,6 +165,7 @@ a {
 
 .city-container::after {
 	content: "";
+	display: block;
 	width: 100%;
 	flex-basis: 67%;
 	background-color: #8a4043;
@@ -227,6 +229,7 @@ a {
 
 .advantages div::before {
 	content: '';
+	display: block;
 	position: absolute;
 	width: 76px;
 	height: 76px;
@@ -250,6 +253,7 @@ a {
 
 .bridge-container::before {
 	content: "";
+	display: block;
 	width: 100%;
 	flex-basis: 67%;
 	background-image: url("../img/bridge1.jpg");
@@ -446,6 +450,8 @@ a {
 	outline: none;
 }
 
+
+
 .date-in,
 .date-out {
 	display: flex;
@@ -523,6 +529,7 @@ input[class="input-date-out"]:active + .calendar {
 
 .count-wrapper .less-btn::before {
 	content: "";
+	display: block;
 	width: 11px;
 	height: 3px;
 	position: absolute;
@@ -534,6 +541,7 @@ input[class="input-date-out"]:active + .calendar {
 .count-wrapper .more-btn::before,
 .count-wrapper .more-btn::after {
 	content: "";
+	display: block;
 	width: 11px;
 	height: 3px;
 	position: absolute;
@@ -655,6 +663,7 @@ input[class="input-date-out"]:active + .calendar {
 
 .filter-input-checkbox + label::before {
     content: "";
+    display: block;
     position: absolute;
     background: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
@@ -672,6 +681,7 @@ input[class="input-date-out"]:active + .calendar {
 
 .filter-input-checkbox:checked + label::before {
     content: "";
+    display: block;
 	background: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 	z-index: 1;
@@ -714,13 +724,12 @@ input[class="input-date-out"]:active + .calendar {
 
 .price-controls::after {
   content: "";
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
