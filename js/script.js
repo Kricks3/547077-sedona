@@ -11,6 +11,8 @@ var childInput = document.getElementById("child");
 var childLessBtn = child.querySelector(".less-btn");
 var childMoreBtn = child.querySelector(".more-btn");
 
+form.classList.add("form-hidden");
+
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	if (form.classList.contains("form-hidden")) {
